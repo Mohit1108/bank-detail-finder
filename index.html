@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bank Details Finder - Smashers Hub</title>
+    <meta name="description"
+        content="IFSC code finder helps you get the details of the Bank. Search by IFSC Code to Check which Bank does an IFSC code belongs. Visit now and get the list of Bank IFSC Codes, MICR codes, Branch details, Addresses, Phone Numbers and more at The Smashers hub.">
+    <meta name="keywords"
+        content="bank finder using ifsc code,bank finder by account number,bank finder by iban,bank finder fdic,bank finder by swift code,bank finder by bic,bank finder by sort code,bank account finder,bank address finder,bank account finder by name,bank account finder by mobile number,bank address finder by ifsc code,jos a bank store finder,bank finder by ifsc,bank code finder,bank card finder,bank code finder uk,bank finder by card number,bank details finder with ifsc code,bank account finder death,bank account details finder,bank finder from ifsc code,bank finder from sort code,bank finder from iban,bank branch finder from ifsc code,bank sort code finder hsbc,bank sort code finder halifax,bank of america home finder,bank find ifsc code,bank finder,bank name finder by ifsc code,bank name finder,bank name finder by account number,banknote finder,bnk name finder with iban, Type IFSC code to Know Branch Details of any Bank in India , IFSC, MICR, NEFT, RTGS, ECS">
+    <meta name="author" content="Mohit Goyal - Smashers Hub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="country" content="IN" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="alternate" type="application/rss+xml"
+        title="Type IFSC code to Know Branch Details of any Bank in India Bank Details Finder - SmashersHub.in"
+        href="http://bankfinder.smashershub.in/" />
+    <link rel="canonical" href="https://bankfinder.smashershub.in/" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://gistcdn.githack.com/SAURABHTECHN/f9fa98fff990bed7f2ce63dccc979c52/raw/8b47ad7fa950e6c69e5c626f793af4a864404ec3/SDesign%20Bank%20Detail%20Checker.css">
+    <link rel="stylesheet"
+        href="https://gistcdn.githack.com/SAURABHTECHN/03ffc48748d72cce628a90ee71a18844/raw/4d2bc26191c225756ab7408714b69d6eacf11033/SDesign%20Ads%20Container.css">
+
+    <style>
+        /*
+header and footer */
+        body {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .fixed-header,
+        .fixed-footer {
+            width: 100%;
+            position: fixed;
+            background: #05595B;
+            padding: 10px 0;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .fixed-header {
+            z-index: 999999;
+            top: -40px;
+            left: 0;
+            right: 0;
+            height: 6em;
+        }
+
+        .fixed-footer {
+            bottom: 0;
+            z-index: 999999;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
+
+        .content-section {
+
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+
+        .content-section h1,
+        h2,
+        h3,
+        h4 {
+            text-align: center;
+        }
+
+        .content-section p {
+            font-size: 18px;
+        }
+
+        .content-section strong {
+            font-weight: bold;
+
+        }
+
+        .logo {
+            font-size: 48px;
+            color: #F5F5F5;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <div class="fixed-header">
+        <div class="container">
+            <h1 class="logo">Bank Finder</h1>
+        </div>
+    </div>
+
+    <div class="fixed-footer">
+        <div class="container">
+            Design with ❤️ by — Smashers Hub</div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!--Ads1 Start-->
+    <div class='AT-ads-content'>
+    </div>
+    <!--Ads1 Finnish-->
+
+    <div class="content-section">
+        <p>Want to scan which bank does an IFSC code belong to you? Use this Investigation by IFSC code feature to
+            double-check the IFSC code before making an NEFT or RTGS transfer to a bank account. IFSC code is the Eleven
+            character alphanumeric code that helps determine the bank-branches participating in the different online
+            money transfer options like NEFT and RTGS. Use our Free Bank details Finder tool. You can know full bank
+            details, such as Address, MICR Code, Contact Number, City, Bank and Bank name.
+        </p>
+    </div>
+    <!--Ads1 Start-->
+    <div class='AT-ads-content'>
+    </div>
+    <!--Ads1 Finnish-->
+
+    <div id="form-content" class="center-align">
+        <form class="col s12" onsubmit="submitCode()">
+            <div class="row">
+                <div class="col s12">
+
+
+                    <h5 class="teal-text">Find Branch Details by IFSC Code.</h5>
+                </div>
+                <div class="col m2"></div>
+                <div class="input-field col m6 s12">
+                    <i class="material-icons prefix">account_balance</i>
+                    <input id="ifsc_code" type="text" class="validate" maxlength="11" minlength="11" required autofocus>
+                    <label for="ifsc_code">Enter 11 character IFSC Code</label>
+                </div>
+                <div class="input-field col m2 s12 ">
+                    <button class="btn">Search</button>
+                </div>
+                <div class="col s2"></div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div id="bank" class="center-align"></div>
+    </div>
+    <div class="center-align">
+        <h6> <a href="https://github.com/razorpay/ifsc/wiki/API" target="_blank"></a> </h6> <a
+            href="https://materializecss.com/" class="red-text" target="_blank"></a>
+
+        <!--Ads1 Start-->
+        <div class='AT-ads-content'>
+        </div>
+
+
+        <!--Ads1 Finnish-->
+        <a href="/" class="teal-text" target="_blank"><button Class="btn">Need Help</button></a>
+    </div>
+
+    <div class="content-section">
+
+
+        <!-- wp:heading -->
+        <h2>What is an IFSC code?</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p><strong>Indian Financial System Code (IFSC).</strong> It is utilised for electronic payment applications like
+            Real Time Gross Settlement (RTGS), Immediate Payment Service, National Electronic Funds Transfer (NEFT),
+            Centralised Funds Management System (CFMS), an interbank electronic instant mobile funds transfer service
+            (IMPS), and developed by Reserve Bank of India (RBI).&nbsp;</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>The code contains eleven characters "Alpha Numeric" in nature. The first four characters symbolise bank, the
+            fifth character is default "0" left for future use, and the last six characters represent branch.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>MICR Code:</strong> Magnetic Ink Character Recognition as published on cheque book to facilitate
+            cheques processing.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:heading -->
+        <h2>How to find the IFSC code of Your branch</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p><strong>1. Cheque leaf:</strong>&nbsp;To find your branch's IFSC code is, the simplest way is to refer to
+            your cheque book. The full address of the department is noted at the top left corner of a cheque leaf. At
+            the Last of the address, you will discover an 11-digit code.&nbsp;<strong>Cheque leaf&nbsp;</strong>is your
+            IFSC Code.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>2. Passbook:</strong>&nbsp;Refer to the front sheet of your passbook. It notes your account details,
+            as well as your branch details. You can look for the IFSC Code there.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>3. RBI website:</strong>&nbsp;Another simple way to find out your IFSC code is to refer to the
+            official website of the Reserve Bank of India. Proceed to the tab for 'IFSC codes'. Here, it is a benefit if
+            you know the name of your branch. You select your bank from the drop-down menu and write the name of your
+            department. The website will provide you with the IFSC Code for your department. Don't worry if you don't
+            know the name of your branch. Once you choose your bank, the RBI furnishes a list of IFSC codes for all the
+            bank branches. You can search for your department and find the relevant IFSC code. Click here to go to the
+            RBI website.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p><strong>4. Bank website:</strong>&nbsp;Almost all banks have Branch Locator services available on their
+            website. You can visit the bank's official website and look for the Branch Locator tool. Click on the tool
+            and find the IFSC Code of your branch. You can locate your department and look for the information on the
+            department.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>While you can use the branch name to find the IFSC Code, you can also find the branch by IFSC Code. You can
+            visit the bank's official website to find the address and details of the bank using the IFSC Code. You can
+            even run a simple Google search of the IFSC Code and get the branch's address it belongs to.</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>If you enter an incorrect IFSC Code while making an online transfer, the funds are credited back to your
+            account. This happens if you transfer to an account holder with a certain IFSC Code that does not match the
+            bank's database.</p>
+        <!-- /wp:paragraph -->
+
+    </div>
+
+    <div class="Sdesignads container">
+        <center>
+            <br />
+            <!--Ads2 Start-->
+            <div class='AT-ads-content'>
+            </div>
+            <!--Ads2 finish-->
+
+            <!-- partial -->
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+            <script src="./script.js"></script>
+            <script
+                src='https://gistcdn.githack.com/SAURABHTECHN/a17cd85c7501ce076bd2827a07dbc601/raw/d3865da4fb62696883849799137da18b8713e505/SDesign%20Bank%20Detail%20Checker.js'></script>
+
+
+</body>
+
+</html>
