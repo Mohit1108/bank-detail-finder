@@ -14,41 +14,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-<link rel="icon" type="image/x-icon" href="/Bank-Finder-Transparent.png">
+    <link rel="icon" type="image/x-icon" href="/Bank-Finder-Transparent.png">
 
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet"
         href="https://gistcdn.githack.com/SAURABHTECHN/f9fa98fff990bed7f2ce63dccc979c52/raw/8b47ad7fa950e6c69e5c626f793af4a864404ec3/SDesign%20Bank%20Detail%20Checker.css">
     <link rel="stylesheet"
         href="https://gistcdn.githack.com/SAURABHTECHN/03ffc48748d72cce628a90ee71a18844/raw/4d2bc26191c225756ab7408714b69d6eacf11033/SDesign%20Ads%20Container.css">
+<script async='async' crossorigin='anonymous'
+    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042117670520352' />
+
+  
+    <script async='async' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' />
+    <meta content='56429f2faf2ebc3611d8da27fc77809e0ac85b3a600a79f36b01c520cc56d3a3' name='ahrefs-site-verification' />
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-218988496-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-218988496-1');
+</script>
 
     <style>
         /*
 header and footer */
-        body {
-            padding-top: 30px;
-            padding-bottom: 30px;
+        .main-container {
+            margin-left: 10%;
+            margin-right: 10%;
+
+        }
+        h1{
+            font-size: 2rem;
+            margin: 10px;
         }
 
-        .fixed-header,
-        .fixed-footer {
+        .fixed-header{
             width: 100%;
             position: fixed;
             background: #05595B;
-            padding: 10px 0;
             color: #ffffff;
             text-align: center;
         }
 
         .fixed-header {
             z-index: 999999;
-            top: -40px;
-            left: 0;
-            right: 0;
-            height: 6em;
+            top: 0px;
         }
 
         .fixed-footer {
@@ -63,12 +77,6 @@ header and footer */
 
 
 
-        .content-section {
-
-            margin-left: 50px;
-            margin-right: 50px;
-
-        }
 
         .content-section h1,
         h2,
@@ -87,48 +95,82 @@ header and footer */
         }
 
         .logo {
-            font-size: 48px;
             color: #F5F5F5;
-            margin-bottom: 20px;
+            padding: 0px;
         }
+.content-img{
+width: 45%; 
+margin-left: auto;
+                  
+margin-right: auto; 
+display: inline-block
+}
+
+.content-p{
+    width:45%;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: auto; 
+    text-align: justify;
+}
+        
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .content-img{
+    display: block;
+    width: 100%;
+}
+.content-p{
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+}
+
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+.content-img{
+    display: block;
+    width: 100%;
+}
+.content-p{
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+}
+}
+
+
+
+
     </style>
 </head>
 
 <body>
     <!-- partial:index.partial.html -->
-
     <div class="fixed-header">
         <div class="container">
             <h1 class="logo">Bank Details Finder</h1>
         </div>
     </div>
 
-    <div class="fixed-footer">
-        <div class="container">
-            Design with ❤️ by — SmashersHub.in</div>
-    </div>
-    <br />
-    <br />
-    <br />
+
+<div class="main-container">
     <!--Ads1 Start-->
     <div class='AT-ads-content'>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042117670520352"
+            crossorigin="anonymous"></script>
+        <!-- Head -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1042117670520352" data-ad-slot="6012734223"
+            data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
     <!--Ads1 Finnish-->
 
-    <div class="content-section">
-        <p>Want to scan which bank does an IFSC code belong to you? Use this Investigation by IFSC code feature to
-            double-check the IFSC code before making an NEFT or RTGS transfer to a bank account. IFSC code is the Eleven
-            character alphanumeric code that helps determine the bank-branches participating in the different online
-            money transfer options like NEFT and RTGS. Use our Free Bank details Finder tool. You can know full bank
-            details, such as Address, MICR Code, Contact Number, City, Bank and Bank name.
-        </p>
-    </div>
-    <!--Ads1 Start-->
-    <div class='AT-ads-content'>
-    </div>
-    <!--Ads1 Finnish-->
 
-    <div id="form-content" class="center-align">
+    <div id="form-content" class="center-align" style="margin-top: 80px;">
         <form class="col s12" onsubmit="submitCode()">
             <div class="row">
                 <div class="col s12">
@@ -145,23 +187,45 @@ header and footer */
                 <div class="input-field col m2 s12 ">
                     <button class="btn">Search</button>
                 </div>
-                <div class="col s2"></div>
+                <div class="col s2">
+
+                </div>
             </div>
         </form>
     </div>
-    <div class="row">
+
+    <div class="row" style="margin-top: 50px;">
         <div id="bank" class="center-align"></div>
     </div>
     <div class="center-align">
         <h6> <a href="https://github.com/razorpay/ifsc/wiki/API" target="_blank"></a> </h6> <a
             href="https://materializecss.com/" class="red-text" target="_blank"></a>
-
+            
+            
+            <div class="content-section">
+            <img class="content-img"  src="/banner.jpg" alt="">
+        
+            <p class="content-p">
+                Want to scan which bank does an IFSC code belong to you? Use this Investigation by IFSC code feature to
+                double-check the IFSC code before making an NEFT or RTGS transfer to a bank account. IFSC code is the Eleven
+                character alphanumeric code that helps determine the bank-branches participating in the different online
+                money transfer options like NEFT and RTGS. Use our Free Bank details Finder tool. You can know full bank
+                details, such as Address, MICR Code, Contact Number, City, Bank and Bank name.
+            </p>
+        </div>
         <!--Ads1 Start-->
         <div class='AT-ads-content'>
-        </div>
-
-
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042117670520352"
+                crossorigin="anonymous"></script>
+            <!-- Head -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1042117670520352" data-ad-slot="6012734223"
+                data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+                    </div>
         <!--Ads1 Finnish-->
+
         <a href="/" class="teal-text" target="_blank"><button Class="btn">Need Help</button></a>
     </div>
 
@@ -237,19 +301,22 @@ header and footer */
     </div>
 
     <div class="Sdesignads container">
-        <center>
-            <br />
             <!--Ads2 Start-->
             <div class='AT-ads-content'>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1042117670520352"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-1042117670520352"
+                    data-ad-slot="5362783954"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
             <!--Ads2 finish-->
 
             <!-- partial -->
             <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
-            <script src="./script.js"></script>
-            <script
-                src='https://gistcdn.githack.com/SAURABHTECHN/a17cd85c7501ce076bd2827a07dbc601/raw/d3865da4fb62696883849799137da18b8713e505/SDesign%20Bank%20Detail%20Checker.js'></script>
-
+            <script src='https://gistcdn.githack.com/SAURABHTECHN/a17cd85c7501ce076bd2827a07dbc601/raw/d3865da4fb62696883849799137da18b8713e505/SDesign%20Bank%20Detail%20Checker.js'></script>
+</div>
 
 </body>
 
